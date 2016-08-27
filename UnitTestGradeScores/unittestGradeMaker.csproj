@@ -57,10 +57,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Fakes Include="Fakes\System.fakes" />
-  </ItemGroup>
-  <ItemGroup>
-    <Fakes Include="Fakes\mscorlib.fakes" />
+    <ProjectReference Include="..\GradeMaker\GradeMaker.csproj">
+      <Project>{e0b0f4aa-5d78-4ea0-9877-9263ee711f22}</Project>
+      <Name>GradeMaker</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
