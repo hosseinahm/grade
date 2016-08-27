@@ -53,14 +53,14 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="TestGradeMaker.cs" />
+    <Compile Include="testGradeMaker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\datagrade\GradeMaker.csproj">
-      <Project>{e0b0f4aa-5d78-4ea0-9877-9263ee711f22}</Project>
-      <Name>GradeMaker</Name>
-    </ProjectReference>
+    <Fakes Include="Fakes\System.fakes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Fakes Include="Fakes\mscorlib.fakes" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
