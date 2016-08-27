@@ -4,8 +4,52 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GradeScores;
+using System.IO;
+
 namespace grade_scores
 {
+    class GradeFileStreamWriter : IGradeStreamWriter
+    {
+        private StreamWriter sw;
+
+        public void CloseFile()
+        {
+            sw.Dispose();
+        }
+        public void OpenFile(string fileName)
+        {
+            sw = new StreamWriter(fileName);
+        }
+
+        public void WriteLine(string value)
+        {
+            sw.WriteLine(value);
+        }
+    }
+
+    class GradeFileStreamReader : IGradeStreamReader
+    {
+        private StreamReader sr;
+        public void CloseFile()
+        {
+            sr.Dispose();
+        }
+        public void OpenFile(string fileName)
+        {
+            sr = new StreamReader(fileName);
+        }
+
+        public string ReadLine()
+        {
+            string lineData = sr.ReadLine();
+            while ((lineData != null) && (lineData.Trim() == ""))
+            {
+                lineData = sr.ReadLine();
+            }
+            return lineData;
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -14,7 +58,7 @@ namespace grade_scores
                 Console.WriteLine("No correct usage of grade-scores \n usage: grade-scores <filename>");
             else
             {
-                GradeMaker gm = new GradeMaker();
+               var gm = new GradeMaker<GradeFileStreamReader, GradeFileStreamWriter>();
                 try
                 {
                     gm.CreateGradeFile(args[0]);

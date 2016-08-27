@@ -1,6 +1,0 @@
-F:\cdev\transmax\datagrade\datagrade\bin\Debug\datagrade.exe.config
-F:\cdev\transmax\datagrade\datagrade\bin\Debug\datagrade.exe
-F:\cdev\transmax\datagrade\datagrade\bin\Debug\datagrade.pdb
-F:\cdev\transmax\datagrade\datagrade\obj\Debug\grade-scores.csprojResolveAssemblyReference.cache
-F:\cdev\transmax\datagrade\datagrade\obj\Debug\datagrade.exe
-F:\cdev\transmax\datagrade\datagrade\obj\Debug\datagrade.pdb

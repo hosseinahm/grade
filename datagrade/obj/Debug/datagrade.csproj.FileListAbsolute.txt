@@ -1,1 +1,0 @@
-F:\cdev\transmax\datagrade\datagrade\bin\Debug\datagrade.exe.config
