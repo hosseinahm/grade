@@ -1,0 +1,6 @@
+F:\grade\GradeMaker\bin\Debug\datagrade.dll.config
+F:\grade\GradeMaker\bin\Debug\datagrade.dll
+F:\grade\GradeMaker\bin\Debug\datagrade.pdb
+F:\grade\GradeMaker\obj\Debug\GradeMaker.csprojResolveAssemblyReference.cache
+F:\grade\GradeMaker\obj\Debug\datagrade.dll
+F:\grade\GradeMaker\obj\Debug\datagrade.pdb
