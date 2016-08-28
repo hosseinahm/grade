@@ -1,0 +1,8 @@
+F:\grade\grade-scores\bin\Debug\grade-scores.exe.config
+F:\grade\grade-scores\bin\Debug\grade-scores.exe
+F:\grade\grade-scores\bin\Debug\grade-scores.pdb
+F:\grade\grade-scores\bin\Debug\datagrade.dll
+F:\grade\grade-scores\bin\Debug\datagrade.pdb
+F:\grade\grade-scores\obj\Debug\grade-scores.csprojResolveAssemblyReference.cache
+F:\grade\grade-scores\obj\Debug\grade-scores.exe
+F:\grade\grade-scores\obj\Debug\grade-scores.pdb
