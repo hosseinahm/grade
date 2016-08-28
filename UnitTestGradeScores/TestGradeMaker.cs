@@ -56,6 +56,7 @@ namespace unittestGradeMaker
             desiredGradFileName = Path.Combine(Path.GetDirectoryName(inputFileName), desiredGradFileName);
             gm.CreateGradeFile(inputFileName);
 
+
             Assert.AreEqual<string>(gm.GradedFileName, desiredGradFileName);
                        
         }
