@@ -8,20 +8,6 @@ using System.Data;
 
 namespace GradeScores
 {
-    public interface IGradeStreamWriter
-    {
-        void WriteLine(string value);
-        void OpenFile(string fileName);
-        void CloseFile();
-    }
-    public interface IGradeStreamReader
-    {
-        string ReadLine();
-        void OpenFile(string fileName);
-        void CloseFile();
-    }
-
-
     public class GradeMaker<GradeStreamReader, GradeStreamWriter> where  GradeStreamWriter : IGradeStreamWriter, new()
                                                                   where GradeStreamReader: IGradeStreamReader, new()
     {
@@ -78,7 +64,7 @@ namespace GradeScores
                 lineNumber++;
                 var lineData = line.Split(',');
                 if (lineData.Length < 3)
-                    throw (new Exception(String.Format("Error in inputfile at line {0}: incorrect number of data.", lineNumber)));
+                    throw (new GradeBadFormatException(lineNumber));
                 var row = GradesDataTable.NewRow();
                 try
                 {
@@ -86,7 +72,7 @@ namespace GradeScores
                 }
                 catch
                 {
-                    throw (new Exception(String.Format("Error in inputfile at line {0}: Grade data not in correct format. It cannot be converted to double.", lineNumber)));
+                    throw (new GradeBadDataFormatException(lineNumber));
                 }
                 row["FirstName"] = lineData[1].Trim();
                 row["LastName"] = lineData[0].Trim();
@@ -132,8 +118,6 @@ namespace GradeScores
                 }
                 sw.CloseFile();
             }
-            else
-                throw (new Exception("Input file is empty"));
         }
     }
 }
