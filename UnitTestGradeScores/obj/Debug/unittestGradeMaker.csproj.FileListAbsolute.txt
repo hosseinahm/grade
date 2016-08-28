@@ -1,9 +1,0 @@
-F:\grade\UnitTestGradeScores\bin\Debug\UnitTestGradeScores.dll
-F:\grade\UnitTestGradeScores\bin\Debug\UnitTestGradeScores.pdb
-F:\grade\UnitTestGradeScores\bin\Debug\datagrade.dll
-F:\grade\UnitTestGradeScores\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-F:\grade\UnitTestGradeScores\bin\Debug\datagrade.pdb
-F:\grade\UnitTestGradeScores\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
-F:\grade\UnitTestGradeScores\obj\Debug\unittestGradeMaker.csprojResolveAssemblyReference.cache
-F:\grade\UnitTestGradeScores\obj\Debug\UnitTestGradeScores.dll
-F:\grade\UnitTestGradeScores\obj\Debug\UnitTestGradeScores.pdb
